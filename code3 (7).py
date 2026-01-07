@@ -14,7 +14,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Institutional Fee Architect", page_icon="⚖️", layout="wide")
+st.set_page_config(page_title="What “2 & 20” Really Means: A Multi-Year Fee Simulation Engine", page_icon="⚖️", layout="wide")
 
 # --- CUSTOM CSS ---
 st.markdown("""
