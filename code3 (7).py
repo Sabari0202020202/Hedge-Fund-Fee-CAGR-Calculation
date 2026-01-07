@@ -46,7 +46,7 @@ with st.sidebar:
     with st.expander("🔬 Sensitivity"):
         step_size = st.slider("Step Size (%)", 0.1, 2.0, 0.5) / 100
 
-st.title("Institutional Performance & Fee Architect")
+st.title("Hedge Fund Fees & Investor Returns Calculator")
 
 # --- DYNAMIC GROWTH INPUTS ---
 st.write("### 📅 Annual Growth Projections")
