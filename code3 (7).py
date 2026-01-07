@@ -121,7 +121,7 @@ m4.metric("Total Performance Fees", f"${df_main['Perf Fee'].sum():,.0f}")
 v1, v2 = st.columns([7, 3])
 with v1:
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=df_main["Year"], y=df_main["Net Closing"], name="Net Value", line=dict(color='#1e293b', width=3), fill='tozeroy'))
+    fig.add_trace(go.Scatter(x=df_main["Year"], y=df_main["Net Closing"], name="Net Value", line=dict(color='#66B2FF', width=3), fill='tozeroy'))
     if use_hwm:
         fig.add_trace(go.Scatter(x=df_main["Year"], y=df_main["HWM"], name="Watermark", line=dict(color='#ef4444', dash='dot')))
     fig.update_layout(title="Capital Appreciation vs. High-Water Mark", template="simple_white", margin=dict(l=0, r=0, t=30, b=0))
@@ -129,7 +129,7 @@ with v1:
 with v2:
     fig_pie = px.pie(names=['Investor Profit', 'Total Fees'],
                      values=[max(0, f_net - initial_value), t_fees],
-                     color_discrete_sequence=['#1e293b', '#cbd5e1'], hole=0.6)
+                     color_discrete_sequence=['#003057', '#66B2FF'], hole=0.6)
     fig_pie.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=20))
     st.plotly_chart(fig_pie, use_container_width=True)
 
